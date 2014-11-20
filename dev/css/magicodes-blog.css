@@ -194,7 +194,10 @@ span {
 .top-user-menu a:active {
   color: rgb(128, 176, 232);
 }
-
+.top-user-search {
+  float: right;
+  width: 20rem;
+}
 
 /* header */
 

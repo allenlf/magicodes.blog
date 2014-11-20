@@ -8,6 +8,25 @@
 .theme-default {
 }
 
+/* topbar */
+.topbar {
+  background: none;
+}
+.top-user-search input,
+.top-user-search button {
+  background: rgba(51, 51, 51, 0.8);
+  border-color: #666;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+.top-user-search .form-control,
+.top-user-search .btn-default {
+  height: 22px;
+  padding: 0 10px;
+}
+
+
+
 /* header */
 .header {
   background: url(bg-grain2.png), #333;
@@ -25,16 +44,3 @@
   color: #aaa;
 }
 
-/* nav */
-.header-nav {
-  background: #000;
-}
-.header-nav a {
-  color: #fff;
-}
-.nav .active > a,
-.nav > li > a:hover,
-.nav > li > a:focus {
-  background: #fff;
-  color: rgb(25, 61, 103);
-}
