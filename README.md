@@ -1,4 +1,4 @@
 magicodes.blog
 ==============
 
-Blog design of Magicodes.NET
+Blog UI of Magicodes.NET
