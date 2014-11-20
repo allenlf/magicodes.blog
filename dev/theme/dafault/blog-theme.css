@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* ========================================
+ * Magicodes.Blog theme "default" CSS
+ * ver. 0.0.000
+ * by taojiachun
+ * ======================================== */
+
+.theme-default {
+}
+
+/* header */
+.header {
+  background: url(bg-grain2.png), #333;
+  background-repeat: repeat;
+/*
+  background-size: cover;
+  background-position: center;
+*/
+}
+.header > h1 {
+  color: #efefef;
+  text-shadow: 1px 1px 0 #000;
+}
+.header > h1 > small {
+  color: #aaa;
+}
+
+/* nav */
+.header-nav {
+  background: #000;
+}
+.header-nav a {
+  color: #fff;
+}
+.nav .active > a,
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #fff;
+  color: rgb(25, 61, 103);
+}
