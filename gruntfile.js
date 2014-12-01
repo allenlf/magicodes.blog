@@ -81,9 +81,10 @@ module.exports = function (grunt) {
       },
       theme: {
         expand: true,
-        src: "dev/theme/**",
+        cwd: "dev/theme",
+        src: "**",
         dest: "dist/theme/",
-        flatten: true,
+        flatten: false,
         filter: 'isFile',
       },
       css: {

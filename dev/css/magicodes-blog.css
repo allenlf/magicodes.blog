@@ -373,7 +373,6 @@ span {
 .content-comments h6 {
   padding: 2rem 0;
   font-size: 1.4rem;
-  color: #999;
 }
 .content-comments > ul > li > div > div,
 .content-comments > ul > li > ul > li > div > div,
@@ -504,6 +503,7 @@ span {
   padding: 0;
 }
 .aside > .leaf {
+  margin-bottom: 1rem;
   padding: 1rem 0;
   border-radius: 0.4rem;
 }
