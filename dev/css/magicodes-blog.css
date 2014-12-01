@@ -93,9 +93,11 @@ select,
 textarea {
   border: 1px solid #000;
   box-shadow: none;
-  outline: none;
 }
-a {
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
   outline: 0;
 }
 h1,
@@ -191,6 +193,7 @@ span {
   width: 20rem;
 }
 
+
 /* header */
 
 .header {
@@ -205,11 +208,362 @@ span {
 
 /* content */
 
+.page {
+  /* 预留 */
+}
+
+.blog {
+  /* 预留 */
+}
+
+/* content: article style */
 .content {
+  margin-top: 2rem;
+  padding: 2rem;
+}
+.content h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+.content h2:first-child {
+  padding-top: 0;
+}
+.content h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  padding: 1rem 0 1.5rem 0;
+}
+.content h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 0 1.5rem 0;
+}
+.content h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 0 1.5rem 0;
+}
+.content h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 0 1.5rem 0;
+}
+.content p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 0.5rem 0;
+}
+.content p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 0.5rem 0;
+}
+.content blockquote {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+.content ul,
+.content ol {
+  margin-left: 7.6rem;
+  font-size: 1.3rem;
+}
+.content ul > li,
+.content ol > li {
+  line-height: 2.4rem;
+}
+.content ul > li {
+  list-style: disc;
+}
+.content img {
+  margin: 1rem 2rem;
+  max-width: 80%;
+}
+.content pre {
+  max-width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background: #efefef;
+}
+.content code {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.content .post-info {
+  margin: 2rem 0 4rem 0;
+  padding: 0.5rem 0;
+  border: 0.1rem solid #efefef;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+.content .post-info span {
+  margin: 0 0.5rem;
+  color: #5e87c9;
+  cursor: pointer;
+}
+.content .post-info i {
+  cursor: pointer;
+}
+.content .post-info .fa-thumbs-o-up,
+.content .post-info .fa-thumbs-up {
+  color: #5e87c9;
+}
+.content .post-info .fa-star-o,
+.content .post-info .fa-star {
+  color: #debd30;
+}
+.content .post-info .fa-share-square-o {
+  color: #bf4f4f;
+}
+.content .nav-page {
+  font-size: 1.0rem;
+  padding: 0;
+  color: #428bca;
+}
+.content .nav-page span:first-child {
+  float: left;
+}
+.content .nav-page span:last-child {
+  float: right;
 }
 
 
+/* content: recommed */
+.content-recommend {
+  margin: 1rem 0;
+  border-top: 0.1rem solid #efefef;
+}
+.content-recommend h6 {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #999;
+}
+.content-recommend ul {
+  margin-left: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+.content-recommend li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.content-recommend img {
+  box-sizing: border-box;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin: 1rem;
+  border-radius: 4.8rem;
+  cursor: pointer;
+}
 
+
+/* content: commments */
+.content-comments {
+  width: 100%;
+}
+.content-comments h6 {
+  padding: 2rem 0;
+  font-size: 1.4rem;
+  color: #999;
+}
+.content-comments > ul > li > div > div,
+.content-comments > ul > li > ul > li > div > div,
+.content-comments > .content-reply > div > div {
+  padding: 1rem;
+}
+.content-comments .info {
+  background: #efefef;
+  border-radius: 0.2rem 0.2rem 0 0;
+  border: 0.1rem solid #efefef;
+  border-bottom: none;
+}
+.content-comments .text {
+  border-radius: 0 0 0.2rem 0.2rem;
+  border: 0.1rem solid #efefef;
+  border-top: none;
+}
+.content-comments span {
+  margin: 0 0.2rem;
+}
+.content-comments > .main > li {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.content-comments > .main > li > img,
+.content-comments > .content-reply img {
+  float: left;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 4.8rem;
+}
+.content-comments > .main > li > div,
+.content-comments > .content-reply > div {
+  margin-left: 6.4rem;
+}
+.content-comments > .main > li > .sub {
+  margin: 1rem 0 1rem 6.4rem;
+}
+.content-comments > .main > li > .sub > li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.content-comments > .main > li > .sub > li > img {
+  float: left;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 3.2rem;
+}
+.content-comments > .main > li > .sub > li > div {
+  margin-left: 4.8rem;
+}
+.content-comments .content-reply textarea {
+  display: block;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+
+
+/* 侧边 */
+.aside {
+  margin-top: 2rem;
+}
+.aside > .user-info {
+}
+.aside > .user-info > .user-head {
+  width: 10rem;
+  height: 10rem;
+}
+.aside > .user-info > div {
+  padding-left: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.aside > .user-info .user-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.aside > .user-info .emblem {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
+  color: #fff;
+}
+.aside > .user-info .span {
+  display: inline-block;
+}
+.aside > .user-info .user-count {
+  padding-top: 1rem;
+}
+.aside .official {
+  background: #d4ba2b;
+}
+.aside .team {
+  background: #3a61a8;
+}
+.aside .admin {
+  background: #9f0a0a;
+}
+.aside .member {
+  background: #216f04;
+}
+.aside .user-area {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+.aside .user-area h3 {
+  font-size: 1.4rem;
+  color: #666;
+  padding-bottom: 0.5rem;
+}
+.aside .user-area p {
+  padding: 0.4rem;
+}
+.aside .rss {
+  font-size: 1.6rem;
+}
+.aside h2 {
+  font-size: 1.4rem;
+  padding: 0 1rem;
+}
+.aside hr {
+  border-color: #eee;
+  box-shadow: 0 0.1rem 0 #fff;
+  margin: 1rem 0;
+  padding: 0;
+}
+.aside > .leaf {
+  padding: 1rem 0;
+  border-radius: 0.4rem;
+}
+.aside ul {
+  padding: 0 3.4rem;
+}
+.aside ul > li {
+  list-style: circle;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+.aside .posts-following {
+  padding: 0 2rem;
+}
+.aside .posts-following > li {
+  list-style: none;
+}
+.aside .posts-following .following-user {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+}
+.aside .posts-following .post-date a {
+  color: #999;
+}
+.aside .posts-following small {
+  color: #999;
+}
+.aside .posts-recent > li {
+  list-style: disc;
+}
+.aside .posts-tags > li {
+  float: left;
+  list-style: none;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  background: #fff;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #428bca;
+}
+.aside .posts-category,
+.aside .posts-archive {
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+}
+.aside .posts-category > li {
+  list-style: none;
+  font-weight: bold;
+}
+
+.aside .posts-archive > li {
+  list-style: none;
+}
 
 
 /* 底部 */

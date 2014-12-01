@@ -52,13 +52,30 @@
   background: #f00;
 }
 .content {
-  height: 500px;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
 
+.content h2 {
+  color: #428bca;
+  text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+.content h3 {
+}
+.content h4 {
+  color: #333;
+}
 
+.aside .user-head {
+  border: 0.4rem solid #ccc;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 1);
+}
 
+.aside > .leaf {
+  background: rgba(239, 239, 239, 0.5);
+  margin-bottom: 1rem;
+}
 
 
 
