@@ -1,6 +1,6 @@
 /* ==========================================================================
  * Magicodes.Blog
- * version 0.0.200: 2014.12.01
+ * version 0.0.200: 2015.01.16
  * ==========================================================================
  * Copyright Team Magicodes.NET
  * Licensed under MIT
@@ -83,6 +83,38 @@
 
 
 
+
+/* ========================================
+ * Homepage index
+ * 展现和隐藏置顶和热门博客内容
+ * ======================================== */
+
++function ($) {
+  'use strict';
+  
+  $('#index-top').on('click', function() {
+    if ($('#index-top').hasClass('fa-angle-down')) {
+      $('#index-top').removeClass('fa-angle-down');
+      $('#index-top').addClass('fa-angle-up');
+    } else {
+      $('#index-top').removeClass('fa-angle-up');
+      $('#index-top').addClass('fa-angle-down');
+    }
+    $('#index-top-pool').slideToggle();
+  });
+  
+  $('#index-hot').on('click', function() {
+    if ($('#index-hot').hasClass('fa-angle-down')) {
+      $('#index-hot').removeClass('fa-angle-down');
+      $('#index-hot').addClass('fa-angle-up');
+    } else {
+      $('#index-hot').removeClass('fa-angle-up');
+      $('#index-hot').addClass('fa-angle-down');
+    }
+    $('#index-hot-pool').slideToggle();
+  });
+
+}(jQuery);
 
 
 
